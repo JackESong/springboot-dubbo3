@@ -1,0 +1,16 @@
+server:
+  port: 9001
+
+
+dubbo:
+  application:
+    id: xxx
+    name: xxx
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20880
+    status: server
+  registry:
+    id: xxx-registry
+    address: zookeeper://mid-registercenter-zk-t:2182?timeout=30000 # timeout 设置太小 程序启动不起来

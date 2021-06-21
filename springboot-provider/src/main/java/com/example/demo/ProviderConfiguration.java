@@ -27,6 +27,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @Configuration
 @EnableDubbo(scanBasePackages = "com.example.demo.impl")
-@PropertySource("classpath:/dubbo-provider.properties")
+//@PropertySource("classpath:/dubbo-provider.properties")
+@PropertySource("classpath:/application.properties")
 public class ProviderConfiguration {
 }
