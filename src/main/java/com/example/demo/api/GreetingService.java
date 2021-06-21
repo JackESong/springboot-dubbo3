@@ -1,4 +1,4 @@
-package com.example.dubbo3demo.api;
+package com.example.demo.api;
 
 /**
  * <p>

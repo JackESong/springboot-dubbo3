@@ -1,4 +1,4 @@
-package com.example.dubbo3demo;
+package com.example.demo;
 
 /**
  * <p>
@@ -40,7 +40,7 @@ public class ProviderBootstrap {
     }
 
     @Configuration
-    @EnableDubbo(scanBasePackages = "com.example.dubbo3demo.impl")
+    @EnableDubbo(scanBasePackages = "com.example.demo.impl")
     @PropertySource("classpath:/dubbo-provider.properties")
     static class ProviderConfiguration {
     }

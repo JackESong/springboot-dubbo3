@@ -1,4 +1,4 @@
-package com.example.dubbo3demo.action;
+package com.example.demo.action;
 
 /**
  * <p>
@@ -40,7 +40,7 @@ package com.example.dubbo3demo.action;
  *
  */
 
-import com.example.dubbo3demo.api.GreetingService;
+import com.example.demo.api.GreetingService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Component;
 

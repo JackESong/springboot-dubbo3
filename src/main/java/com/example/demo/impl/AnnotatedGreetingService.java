@@ -1,4 +1,4 @@
-package com.example.dubbo3demo.impl;
+package com.example.demo.impl;
 
 /**
  * <p>
@@ -40,7 +40,7 @@ package com.example.dubbo3demo.impl;
  *
  */
 
-import com.example.dubbo3demo.api.GreetingService;
+import com.example.demo.api.GreetingService;
 import org.apache.dubbo.config.annotation.DubboService;
 
 @DubboService(version = "1.0.0")
