@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.sample;
 
 /**
  * <p>
@@ -21,6 +21,7 @@ package com.example.demo;
  * <p>
  * @Version: v1.0
  */
+import com.example.demo.ProviderConfiguration;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -39,10 +40,6 @@ public class ProviderBootstrap {
         new CountDownLatch(1).await();
     }
 
-    @Configuration
-    @EnableDubbo(scanBasePackages = "com.example.demo.impl")
-    @PropertySource("classpath:/dubbo-provider.properties")
-    static class ProviderConfiguration {
-    }
+
 }
 

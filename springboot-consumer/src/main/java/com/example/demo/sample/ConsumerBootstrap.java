@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.sample;
 
 /**
  * <p>
@@ -21,6 +21,7 @@ package com.example.demo;
  * <p>
  * @Version: v1.0
  */
+import com.example.demo.ConsumerConfiguration;
 import com.example.demo.action.GreetingServiceConsumer;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 
@@ -39,11 +40,5 @@ public class ConsumerBootstrap {
         System.out.println("result: " + hello);
     }
 
-    @Configuration
-    @EnableDubbo(scanBasePackages = "org.apache.dubbo.samples.action")
-    @PropertySource("classpath:/dubbo-consumer.properties")
-    @ComponentScan(value = {"com.example.demo.action"})
-    static class ConsumerConfiguration {
 
-    }
 }
